@@ -12,6 +12,17 @@ use Validator;
 use Crypt;
 use DateTime;
 
+/**
+* UserController is a sample class for demonstrating a Laravel controller class
+*
+* This class has no real actual code, but merely exits
+* to demonstrate a normal Laravel controller class
+*
+* @package  Users
+* @author   Sagar Gurnani <sagar@lucidsoftech.com>
+* @version  1.0.0
+* @access   public
+*/
 class UserController extends Controller
 {
     /**
@@ -103,7 +114,7 @@ class UserController extends Controller
      * 
      * @return Mixed
      */
-    static function create_user($appartment_id, $userType) 
+    public function create_user($appartment_id, $userType) 
     {    
         // Check if New User Details exist in session storage
         if(isset($appartment_id) && Session::get('newUserDetails')) {
